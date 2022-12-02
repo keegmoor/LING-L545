@@ -1,0 +1,16 @@
+DELIMITERS = "." ;
+
+LIST DET = DET ;
+LIST PUNCT = PUNCT ;
+LIST PRON = PRON ;
+LIST VERB = VERB ;
+LIST Number=Sing = Number=Sing ;
+LIST Number=Plur = Number=Plur ;
+LIST Case=Gen = Case=Gen ;
+
+SECTION
+
+REMOVE DET IF (1C PUNCT) ;
+REMOVE PRON IF (1 VERB)(-1 VERB) ;
+REMOVE Number=Plur IF (-1C Number=Sing)(1C Number=Sing) ;
+SELECT Case=Gen IF (1C Case=Gen) ;
