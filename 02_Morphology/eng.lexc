@@ -1,0 +1,41 @@
+Multichar_Symbols
+
+%>                   ! Frontera de morfema
+%<m%>
+LEXICON Root
+
+Nouns ;
+
+LEXICON N
+
+%<n%>: CASE ;
+
+
+LEXICON CASE
+# ;
+%<pos%>:%>'s #; ! 
+
+LEXICON Nouns
+
+cat:cat N ;
+dog:dog N ;
+eggplant:eggplant N ;
+hamster:hamster N ;
+kid:kid N ;
+mother:mother N ;
+father:father N ;
+hair:hair N ;
+can:can N ;
+pen:pen N ;
+cup:cup N ;
+phone:phone N ;
+controller:controller N ;
+television:television N ;
+plate:plate N ;
+paper:paper N ;
+pencil:pencil N ;
+light:light N ;
+bed:bed N ;
+door:door N ;
+
+

@@ -1,0 +1,36 @@
+Multichar_Symbols
+
+%>                   ! Frontera de morfema
+%<n%>                ! Nombre
+%<gen%>              ! Genitivo
+%<loc%>              ! Locativo
+%<m%>
+%<der_kue%>
+LEXICON Root
+
+Nouns ;
+
+LEXICON N
+
+%<n%>: CASE ;
+%<n%>: SUBST ;
+
+LEXICON SUBST
+
+%<der_kue%>:%>kue # "weight: 1.0" ;
+
+LEXICON CASE
+ #;
+%<nom%>: # ; ! ""
+%<gen%>:%>gui #; ! "de"
+%<loc%>:%>%{m%}e # ; ! "a, en"
+
+LEXICON Nouns
+
+ava:ava N ; ! "raza, gente"
+óga:óga N ; ! "casa"
+irũ:irũ N ; ! "amigo"
+apyka:apyka N ; ! "silla"
+tembiasa:tembiasa N ; ! experience
+
+
